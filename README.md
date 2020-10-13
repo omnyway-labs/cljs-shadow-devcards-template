@@ -1,4 +1,12 @@
-This project was bootstrapped with [Create CLJS App](https://github.com/filipesilva/create-cljs-app).
+## Template for Clojurescript Reagent App working with DevCards or Standalone
+
+This project was started from running [Create CLJS
+App](https://github.com/filipesilva/create-cljs-app) and then:
+* Updated all package.json and clojure deps
+* Fixes to devcards dependencies by adding the files in src/cljs and updates to shadow-cljs
+  * as per [Devcards Issue: The required namespace "devcards-marked" is not available, it was required by "devcards/util/markdown.cljs". #168](https://github.com/bhauman/devcards/issues/168#issuecomment-707489078)
+
+You can clone this as a starting point for simple reagent applications and Devcards that will work with reagent
 
 ## Available Scripts
 
@@ -67,5 +75,9 @@ Quick reference https://cljs.info/cheatsheet/.
 
 Offline searchable docs https://devdocs.io/.
 
-VSCode plugin https://github.com/BetterThanTomorrow/calva.
+## License
 
+Released under MIT License
+
+Copyright (c) 2019-present, Filipe Silva.
+Copyright 2020 Robert Berger
