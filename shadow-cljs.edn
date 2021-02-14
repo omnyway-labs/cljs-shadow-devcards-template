@@ -1,23 +1,21 @@
-{:builds
- {:app   {:asset-path "/js"
-          :modules    {:main {:init-fn app.core/main}}
-          :output-dir "public/js"
-          :target     :browser}
-  :cards {:asset-path       "/js"
-          :modules          {:main {:init-fn app.cards/main}}
-          :compiler-options {:devcards true}
-          :output-dir       "public/js"
-          :build-options    {:ns-aliases {devcards-marked             cljsjs.marked
-                                          devcards-syntax-highlighter cljsjs.highlight}}
-          :target           :browser}
-  :test  {:ns-regexp "app.cards"
-          :output-to "out/test.js"
-          :target    :node-test}
-  :e2e   {:ns-regexp "e2e.*"
-          :output-to "out/e2e.js"
-          :target    :node-test}}
- :dependencies [[reagent "1.0.0-alpha2"]
-                [devcards "0.2.7"]]
- :dev-http     {3000 "public"}
- :nrepl        {:port 3333}
- :source-paths ["src"]}
+{:deps   true
+ :nrepl  {:port 3333}
+ :dev-http {3000 "public"}
+ :builds {:app
+          {:target     :browser
+           :asset-path "/js"
+           :modules    {:main {:init-fn app.core/main}}
+           :output-dir "public/js"}
+          :cards {:target           :browser
+                  :asset-path       "/js"
+                  :modules          {:main {:init-fn app.cards/main}}
+                  :compiler-options {:devcards true}
+                  :output-dir       "public/js"
+                  :build-options    {:ns-aliases {devcards-marked             cljsjs.marked
+                                                  devcards-syntax-highlighter cljsjs.highlight}}}
+          :test  {:target    :node-test
+                  :ns-regexp "app.cards"
+                  :output-to "out/test.js"}
+          :e2e   {:target    :node-test
+                  :ns-regexp "e2e.*"
+                  :output-to "out/e2e.js"}}}

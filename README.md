@@ -6,7 +6,8 @@ App](https://github.com/filipesilva/create-cljs-app) and then:
 * Fixes to devcards dependencies by adding the files in src/cljs and updates to shadow-cljs
   * as per [Devcards Issue: The required namespace "devcards-marked" is not available, it was required by "devcards/util/markdown.cljs". #168](https://github.com/bhauman/devcards/issues/168#issuecomment-707489078)
 
-You can clone this as a starting point for simple reagent applications and Devcards that will work with reagent
+You can `Use this template` this as a starting point for simple reagent
+applications and Devcards that will work with reagent
 
 ## Available Scripts
 
