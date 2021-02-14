@@ -1,7 +1,7 @@
 {:deps
  {reagent/reagent {:mvn/version "1.0.0"}
   devcards/devcards {:mvn/version "0.2.7"}
-  org.clojure/clojure     {:mvn/version "1.10.1"}
+  org.clojure/clojure     {:mvn/version "1.10.2"}
   org.clojure/clojurescript
   {:exclusions
    [com.google.javascript/closure-compiler-unshaded
