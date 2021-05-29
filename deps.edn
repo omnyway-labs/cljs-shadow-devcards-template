@@ -1,12 +1,12 @@
 {:deps
  {reagent/reagent {:mvn/version "1.0.0"}
   devcards/devcards {:mvn/version "0.2.7"}
-  org.clojure/clojure     {:mvn/version "1.10.2"}
+  org.clojure/clojure     {:mvn/version "1.10.3"}
   org.clojure/clojurescript
   {:exclusions
    [com.google.javascript/closure-compiler-unshaded
     org.clojure/google-closure-library
     org.clojure/google-closure-library-third-party]
-   :mvn/version "1.10.773"}
-  thheller/shadow-cljs {:mvn/version "2.11.18"}}
+   :mvn/version "1.10.866"}
+  thheller/shadow-cljs {:mvn/version "2.14.2"}}
  :paths ["src"]}
