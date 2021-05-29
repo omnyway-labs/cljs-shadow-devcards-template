@@ -12,6 +12,6 @@
 
 (defn hello []
   [:<>
-   [:p "Hello, simple-list-dnd is running!"]
+   [:p "Hello, cljs-devcards-starter is running!"]
    [:p "Here's an example of using a component with state:"]
    [click-counter click-count]])
