@@ -15,7 +15,10 @@
                                                   devcards-syntax-highlighter cljsjs.highlight}}}
           :test  {:target    :node-test
                   :ns-regexp "app.cards"
-                  :output-to "out/test.js"}
+                  :output-to "out/test.js"
+                  :build-options    {:ns-aliases {devcards-marked             cljsjs.marked
+                                                  devcards-syntax-highlighter cljsjs.highlight}}}
+
           :e2e   {:target    :node-test
                   :ns-regexp "e2e.*"
                   :output-to "out/e2e.js"}}}
