@@ -41,12 +41,15 @@ Your app is ready to be deployed!
 
 ## Other useful scripts
 
-### `null` and `yarn e2e`
+__NOTE:__ `e2e` and `yarn lint` are not working for me - R. Berger may 2021
 
-You can use `null` to run tests a single time, and `yarn e2e` to run the end-to-end test app.
-`yarn test` launches tests in interactive watch mode.<br>
 
-See the ClojureScript [testing page](https://clojurescript.org/tools/testing) for more information. E2E tests use [Taiko](https://github.com/getgauge/taiko) to interact with a headless browser.
+### `yarn test` and `yarn e2e`
+
+You can use `yarn test` to run tests a single time, and `yarn e2e` to run the end-to-end test app.
+`yarn test:watch` launches tests in interactive watch mode.<br>
+
+See the ClojureScript [testing page](https://clojurescript.org/tools/testing) for more information. E2E tests use [Taiko](https://github.com/getgauge/taiko) to interact with a headless browser. 
 
 ### `yarn lint` and `yarn format`
 
